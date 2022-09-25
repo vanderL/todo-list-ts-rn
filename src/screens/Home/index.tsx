@@ -1,9 +1,11 @@
-import { View } from "react-native";
+import * as Sc from './styles';
+
+import { Header } from "@components/Header";
 
 export function Home() {
   return (
-    <View>
-      Home
-    </View>
+    <Sc.Container>
+      <Header />
+    </Sc.Container>
   )
 }
