@@ -4,6 +4,7 @@ import { Header } from "@components/Header";
 import { Input } from '@components/Input';
 import { Button } from '@components/Button';
 import { Counts } from '@components/Counts';
+import { Task } from '@components/Task';
 
 export function Home() {
   return (
@@ -15,6 +16,9 @@ export function Home() {
         />
       </Sc.Form>
       <Counts />
+      <Task
+        array={['àgua', 'Coca-cola', 'Latão', 'Mary']}
+      />
     </Sc.Container>
   )
 }

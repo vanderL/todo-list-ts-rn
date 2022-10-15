@@ -10,7 +10,7 @@ export const Container = styled.View`
   margin-top: 32px;
 `;
 
-export const TextCreate = styled.TextInput`
+export const TextCreate = styled.Text`
  ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.SM}px;
     color: ${theme.COLORS.BLUE}; 
@@ -19,7 +19,13 @@ export const TextCreate = styled.TextInput`
   line-height: 17px;
 `;
 
-export const TextDone = styled.TextInput`
+export const ViewContent = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TextDone = styled.Text`
  ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.SM}px;
     color: ${theme.COLORS.PURPLE}; 
@@ -28,12 +34,18 @@ export const TextDone = styled.TextInput`
   line-height: 17px;
 `;
 
-export const Count = styled.TextInput`
+export const Count = styled.Text`
+ margin-left: 8px;
+ border-radius: 8px;
+ border-radius: 999px;
+ justify-content: center;
+ align-items: center;
+ padding: 2px 8px;
+
  ${({ theme }) => css`
   background-color: ${theme.COLORS.GRAY_400};
     font-size: ${theme.FONT_SIZE.SM}px;
     color: ${theme.COLORS.WHITE}; 
     font-weight: ${theme.FONT_FAMILY.BOLD};
   `};
-  line-height: 17px;
 `;

@@ -1,20 +1,26 @@
 import * as Sc from './styles';
-import { View } from 'react-native';
 
 export function Counts() {
   return (
     <Sc.Container>
-      <View>
+      <Sc.ViewContent>
+
         <Sc.TextCreate>
           Criadas
         </Sc.TextCreate>
         <Sc.Count>
-          0
+          3
         </Sc.Count>
-      </View>
-      <Sc.TextDone>
-        Concluidas 0
-      </Sc.TextDone>
+      </Sc.ViewContent>
+
+      <Sc.ViewContent>
+        <Sc.TextDone>
+          Concluidas
+        </Sc.TextDone>
+        <Sc.Count>
+          4
+        </Sc.Count>
+      </Sc.ViewContent>
     </Sc.Container>
   )
 }

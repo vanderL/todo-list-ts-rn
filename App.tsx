@@ -7,7 +7,7 @@ import theme from '@theme/index';
 import { Home } from './src/screens/Home'
 
 export default function App() {
-  const [fontsLoaded] = useFonts({
+  let [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_700Bold
   })
