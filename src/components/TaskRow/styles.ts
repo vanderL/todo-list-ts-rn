@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components/native';
+import { TouchableOpacity } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
@@ -10,10 +11,11 @@ export const Container = styled.View`
     margin-bottom: 8px;
     flex-direction: row;
     justify-content: space-between;
-    padding:12px
+    padding:12px;
+    border-radius: 8px;
 `;
 
-export const TaskDescription = styled.Text`
+export const TaskDescription = styled(TouchableOpacity)`
   color: ${({ theme }) => theme.COLORS.WHITE};
   padding: 12px 
 `;

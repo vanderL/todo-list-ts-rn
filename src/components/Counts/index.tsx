@@ -9,7 +9,7 @@ export function Counts() {
           Criadas
         </Sc.TextCreate>
         <Sc.Count>
-          3
+          4
         </Sc.Count>
       </Sc.ViewContent>
 
@@ -18,7 +18,7 @@ export function Counts() {
           Concluidas
         </Sc.TextDone>
         <Sc.Count>
-          4
+          1
         </Sc.Count>
       </Sc.ViewContent>
     </Sc.Container>

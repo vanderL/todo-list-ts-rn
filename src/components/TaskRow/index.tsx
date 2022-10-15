@@ -14,9 +14,10 @@ export function TaskRow({ description }: Props) {
   return (
     <Sc.Container>
       <BouncyCheckbox
-        size={25}
+        size={18}
         fillColor={checkboxState ? '#5e60ce' : '#4EA8DE'}
         text={description}
+        style={{ width: 266 }}
         innerIconStyle={{ borderWidth: 2 }}
         isChecked={checkboxState}
         onPress={() => setCheckboxState(!checkboxState)}
